@@ -480,6 +480,7 @@ form button{
     border: none;
     cursor: pointer;
     padding: 20px 0;
+    font-size: 18px;
 }
 form input:focus,
 form textarea:focus{
