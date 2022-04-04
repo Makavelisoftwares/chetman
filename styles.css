@@ -443,7 +443,7 @@ body{
     height: 100vh;
     max-width :90%;
     margin: auto;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .form{
     padding-top:30px ;
@@ -459,7 +459,7 @@ body{
     background-color: #F06614;
 }
 .up{
-    padding-top:30px ;
+    /* padding-top:30px ; */
     transform: translateY(0%);
     opacity: 1;
     transition: ease-in-out 1.5s;
@@ -695,7 +695,6 @@ nav{
         width: 100%;
     }
     footer{
-        margin-top: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -710,17 +709,21 @@ nav{
         justify-content: flex-start;
     }
     .footer1 .links {
-        margin: 10px 0;
+        margin: 2px 0;
     }
     
     .footer1 .links ul li {
         display: block;
-        padding: 15px 0;
+        padding: 10px 0;
     }
     .footer1 .links li a{
         font-size: 15px;
     }
     .copyright{
+        padding: 15px 0;
+    }
+    .time{
+        font-size: 1.5em;
         padding: 10px 0;
     }
 
