@@ -520,6 +520,9 @@ form button:focus{
 .menu{
     display: none;
 }
+nav{
+    display: none;
+}
 
 
 @media (max-width:950px) {
