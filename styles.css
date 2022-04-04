@@ -477,6 +477,7 @@ textarea{
     font-size: 1.1em;
     margin: 10px 0;
     font-weight: 100;
+    background-color: #fff;
 
 }
 select option{
@@ -484,20 +485,21 @@ select option{
 }
 
 form button{
-    background-color: #F06614;
+    background-color: #000000;
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 20px 0;
     font-size: 18px;
 }
+
 form input:focus,
 form textarea:focus{
     background-color:#fff;
 }
 form button:hover,
 form button:focus{
-    background-color: #9e4009;
+    background-color: #252222;
 }
 .form{
     position: relative;
