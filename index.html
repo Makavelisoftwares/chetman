@@ -137,6 +137,7 @@
                     method="POST"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
+                    action="/success/"
                 >
                     <h4>Location: </h4>
                     <select name="select">
@@ -150,11 +151,7 @@
                     <input type="text" placeholder="Enter subject" name="subject">
                     <textarea placeholder="Write message" name="message"></textarea>
                     <button type="submit">Submit</button>
-                    <p class="hidden">
-                        <label>
-                          Don’t fill this out if you’re human: <input name="bot-field" />
-                        </label>
-                      </p>
+                    
                 </form>
             </div>
             
