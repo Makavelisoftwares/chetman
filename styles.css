@@ -522,7 +522,7 @@ form button:focus{
 }
 
 
-@media (max-width:320px) {
+@media (max-width:500px) {
     nav{
         position: fixed;
         height: 100vh;
