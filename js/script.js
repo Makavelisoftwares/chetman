@@ -5,6 +5,35 @@ var pm=document.querySelector('.pm');
 var years=document.querySelector('.copyright span')
 
 
+var menu=document.querySelector('.menu i')
+var nav=document.querySelector('nav')
+var links=document.querySelectorAll('nav a');
+
+
+
+nav.style.left="-100%"
+menu.onclick=()=>{
+    if(nav.style.left=="-100%"){
+        nav.style.left="0%"
+        links.forEach(link=>{
+            link.onclick=()=>{
+                if(nav.style.left=="0%"){
+                    nav.style.left="-100%";
+                }
+            }
+           
+        })
+           
+    }else{
+        nav.style.left="-100%"
+        
+    }
+}
+
+
+
+
+
 
 
 
@@ -105,7 +134,7 @@ window.onscroll=()=>{
     }
     
 
-    if(position<height-10){
+    if(position<height){
         service.classList.add('scroll')
 
     }else{
@@ -115,16 +144,4 @@ window.onscroll=()=>{
 }
 
 
-var submitBtn=document.querySelector('.submitBtn').disabled=true;
-var email=document.querySelector('.email');
-var phone=document.querySelector('.phone');
-var subject=document.querySelector('.subject');
-var message=document.querySelector('.message');
-
-if(email.value.length>1||phone.value.length<1||subject.value.length<1||message.value.length<1){
-    submitBtn.disabled=false;
-}else{
-    submitBtn.disabled=true;
-
-}
 

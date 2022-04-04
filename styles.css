@@ -21,7 +21,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
     opacity: 0;
     transition: ease-in-out .1s;
@@ -34,11 +34,12 @@ body{
 }
 .header2
 {
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header1 img{
     width: 100px;
@@ -223,8 +224,8 @@ body{
 
 .about,
 .services{
-    height: 100vh;
-    max-width: 1200px;
+    /* height: 100vh; */
+    max-width: 90%;
     margin: auto;
     padding: 20px 0;
     margin-top: 70px;
@@ -258,7 +259,7 @@ body{
     object-fit: contain;
     padding: 50px;
     margin-top: 20px;
-    height: 90vh;
+    /* height: 90vh; */
     position: relative;
 }
 .aboutImg::before{
@@ -308,7 +309,7 @@ body{
     transform: translateY(0);  
 }
 .serviceinfo{
-    height: 70vh;
+    /* height: 70vh; */
     background-color:  #F06614;
     padding: 30px ;
     display: flex;
@@ -392,12 +393,12 @@ body{
 
 .gallery{
     margin: auto;
-    max-width: 1200px;
-    height: 100vh;
+    max-width: 90%;
+    /* height: 100vh; */
     padding: 20px 0;
 }
 .gallerycontainer{
-    max-width: 900px;
+    max-width: 90%;
     margin: auto;
     margin-top: 10px;
     height: 100vh;
@@ -440,7 +441,7 @@ body{
 
 .contact{
     height: 100vh;
-    max-width :1200px;
+    max-width :90%;
     margin: auto;
     padding: 20px 0;
 }
@@ -450,7 +451,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 600px;
-    height: 70vh;
+    /* height: 70vh; */
     margin: auto;
     transform: translateY(-10%);
     opacity: 0;
@@ -500,7 +501,7 @@ form button:focus{
     font-size: 1em;
 }
 .footer1 {
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
 }
 .footer1{
@@ -516,12 +517,186 @@ form button:focus{
     padding: 0 20px;
 }
 
-.body{
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+.menu{
+    display: none;
+}
+
+
+@media (max-width:320px) {
+    nav{
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        background-color: #F06614;
+        color: #fff;
+        top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        transition: ease-in-out .9s;
+    }
+    .sidebar .links ul li{
+        display: flex;
+        padding: 20px 0;
+    }
+    .sidebar .links li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .header .links{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .menu{
+        flex: 2;
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu i{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .logo{
+        flex: 10;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .header1{
+        padding: 5px 0;
+        width: 100%;
+        /* display: none; */
+    }
+    .header2{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        /* flex-direction: column-reverse; */
+    }
+    .container1{
+        width: 100%;
+    }
+    .container1 h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .container1 p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .name::after{
+        display: none;
+    }
+    .social::before{
+        display: none;
+    }
+    .social::after{
+        display: none;
+    }
+    .container2{
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    .social{
+        position: absolute;
+        bottom: -10%;
+        display: none;
+    }
+    .social i{
+        padding: 5px;
+    }
+    .container2 img{
+        width: 100%;
+        height: 200px;
+    }
+    .banner2{
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .aboutMore{
+        display: flex;
+        flex-direction: column;
+    }
+    .name{
+        display: none;
+    }
+    .aboutImg {
+        width: 100%;
+        height: 60vh;
+
+    }
+    .aboutDetails{
+        width: 100%;
+    }
+
+    .serviceDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceinfo{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .gallerycontainer{
+        width: 100%;
+
+    }
+    .galleryImg img{
+        width: 100%;
+    }
+    .galleryBorder{
+        width: 100%;
+        left: 0%;
+        right: 10px;
+
+    }
+    .form{
+        width: 100%;
+    }
+    footer{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+            
+    .footer1 {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .footer1 .links {
+        margin: 10px 0;
+    }
+    
+    .footer1 .links ul li {
+        display: block;
+        padding: 15px 0;
+    }
+    .footer1 .links li a{
+        font-size: 15px;
+    }
+    .copyright{
+        padding: 10px 0;
+    }
+
+
 }
