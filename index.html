@@ -132,7 +132,12 @@
         <div class="contact" id="contact">
             <h2>Let's Talk</h2>
             <div class="form">
-                <form name="contact" method="POST" data-netlify="true" onsubmit="submit" >
+                <form
+                    name="contact"
+                    method="POST"
+                    netlify-honeypot="bot-field"
+                    data-netlify="true"
+                >
                     <h4>Location: </h4>
                     <select name="select">
                         <option >Ukunda</option>
@@ -145,6 +150,11 @@
                     <input type="text" placeholder="Enter subject" name="subject">
                     <textarea placeholder="Write message" name="message"></textarea>
                     <button type="submit">Submit</button>
+                    <p class="hidden">
+                        <label>
+                          Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                      </p>
                 </form>
             </div>
             
