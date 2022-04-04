@@ -478,6 +478,8 @@ textarea{
     margin: 10px 0;
     font-weight: 100;
     background-color: #fff;
+    outline: none;
+    border: none;
 
 }
 select option{
@@ -505,7 +507,7 @@ form button:focus{
     position: relative;
     background-color: #F06614;
 }
-.form::before{
+/* .form::before{
     position: absolute;
     content: '';
     left: 0%;
@@ -517,7 +519,7 @@ form button:focus{
     background-position: center center;
     background-repeat: no-repeat;
     opacity: .45;
-}
+} */
 .form select{
     padding: 10px;
     font-size: 1.5em;
