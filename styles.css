@@ -329,7 +329,7 @@ body{
     margin: 20px 0;
 }
 .serviceinfo:nth-child(1)::before{
-    background-image: url(./images/IMG-20220213-WA0010.jpg);
+    background-image: url(./images/Top_Wall_Electric_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -467,12 +467,20 @@ form{
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding: 10px;
 }
+select,
 form input,
 textarea{
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: 10px 0;
+    font-weight: 100;
+
+}
+select option{
+    font-size: 0.8em;
 }
 
 form button{
@@ -490,6 +498,23 @@ form textarea:focus{
 form button:hover,
 form button:focus{
     background-color: #9e4009;
+}
+.form{
+    position: relative;
+    background-color: #F06614;
+}
+.form::before{
+    position: absolute;
+    content: '';
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    background-image: url(./images/posts.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .45;
 }
 .form select{
     padding: 10px;
