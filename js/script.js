@@ -115,16 +115,16 @@ window.onscroll=()=>{
 }
 
 
-var submitBtn=document.querySelector('.submitBtn');
+var submitBtn=document.querySelector('.submitBtn').disabled=true;
 var email=document.querySelector('.email');
 var phone=document.querySelector('.phone');
 var subject=document.querySelector('.subject');
 var message=document.querySelector('.message');
 
-if(email.value.length<1||phone.value.length<1||subject.value.length<1||message.value.length<1){
-    submitBtn.disabled=true;
-}else{
+if(email.value.length>1||phone.value.length<1||subject.value.length<1||message.value.length<1){
     submitBtn.disabled=false;
+}else{
+    submitBtn.disabled=true;
 
 }
 
