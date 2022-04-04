@@ -45,6 +45,10 @@ body{
     width: 100px;
     object-fit: contain;
 }
+.header2 button a{
+    text-decoration: none;
+    color: #eee;
+}
 .links{
     
     display: flex;
@@ -224,7 +228,6 @@ body{
 
 .about,
 .services{
-    /* height: 100vh; */
     max-width: 90%;
     margin: auto;
     padding: 20px 0;
@@ -232,7 +235,10 @@ body{
     
 
 }
-
+.services button a{
+    text-decoration: none;
+    color: #000000;
+}
 .about h2,
 .services h2,
 .gallery h2,
@@ -452,7 +458,7 @@ body{
     justify-content: center;
     width: 600px;
     margin: auto;
-    transform: translateY(-10%);
+    transform: translateY(30%);
     opacity: 0;
     transition: ease-in-out 1.5s;
     position: relative;

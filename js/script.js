@@ -88,6 +88,9 @@ window.onload=()=>{
     }else{
         header1.classList.remove('.top')
     }
+
+    
+
 }
 
 
